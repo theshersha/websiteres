@@ -37,17 +37,21 @@ const Cart = (props) => {
     <Modal onClose={props.onClose}>
       {cartItems}
       <div className={classes.total}>
+        
         <span>Total Amount</span>
-        <span>{totalAmount}</span>
+        <span>{totalAmount}</span> 
       </div>
       <div className={classes.actions}>
         <button className={classes['button--alt']} onClick={props.onClose}>
           Close
         </button>
-        {hasItems && <button className={classes.button}>Order</button>}
+        {hasItems && <button className={classes.button}>Order</button>} 
+        
+      
       </div>
     </Modal>
   );
 };
 
 export default Cart;
+
